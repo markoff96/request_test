@@ -5,7 +5,9 @@
 // // let job = {title: 'Developer', place:'New York', salary:50000 };
 // // alert(hobbies[0]);
 
-// const myName = 'Kirill';
+// // const myName = {
+//     'Kirill'
+// };
 // console.log(myName);
 
 // myName = 'aa'
@@ -13,12 +15,11 @@
 // console.log(myName);
 
 const objectA = {
-    a = 10,
-    b = 'abc'
+  a: 10,
+  b: "abc",
 };
 
-const copyObjectA = objectA ;
-
-copyObjectA.a = 50 ;
-
-copyObjectA.c = 'xyz';
+const copyObjectA = { ...objectA };
+copyObjectA.a = 50;
+copyObjectA.c = "xyz";
+console.log(objectA);
